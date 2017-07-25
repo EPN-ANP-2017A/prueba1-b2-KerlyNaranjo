@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="cold-md-12">
+            <div class="page-header margin-none">
+                <h1>Crear plato</h1>
+            </div>
+            <div class="table-responsive">
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('plato_index') }}">Back to the list</a>
+        </li>
+    </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
